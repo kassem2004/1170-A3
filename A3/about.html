@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<link rel=" icon" href="images/Fav.png">
+    <title>Kassem Personal Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<!-- Header Starts -->
+<div class="grid-container-2">
+<div class="grid-1">
+<h1>About me</h1>
+<nav class="navLinks">
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li><a href="skills.html">Skills</a></li>
+	  <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	</ul>
+  </nav>
+  <button onclick = "color('rgb(39, 19, 94)', 'orange')">Normal</button>
+  <button onclick = "color1('black', 'white')" >Dark</button>
+  <button onclick="color2('lightblue', 'darkmagenta')">Light</button>
+</div>
+<!-- Header End -->
+
+<!-- About -->
+<div class="grid-2">
+<p> On this page I will take about myself and my hobbies.</p>
+<p class="sib"> My name is Kassem Zeinab. I am a Computer Scienece student at Dalhousie University and I aspire to eventually work in the field of cyber security. I have always found cyber security to be the coolest field in computer science, and I find it very interesting, and I believe it is very important as technology is the future of the world.</p>
+<p> I dont really have too many hobbies. I spend most of my spare time either hanging out with friends, or relaxing and watching something.</p>
+<img src="images/friends.jpg" alt="friends" width="400px" height="300px">
+</div>
+<div class="grid-3">
+<p> Some of the things I also enjoy doing in my spare time are:</p>
+<ul>
+	<li> Watch Movies</li>
+	<li> Watch tv shows</li>
+	<li> Listen to music</li>
+</ul>
+<table>
+	<tr>
+		<td>
+			<p> My top 3 Movies are:</p>
+			<ol>
+				<li>Cars</li>
+				<li>Interstellar</li>
+				<li>12 Angry men</li>
+			</ol>
+		</td>
+		<td>
+			<p>My top 3 songs are:</p>
+			<ol>
+				<li>Still Think About You :(</li>
+				<li>Heartbreak Anniversiry :(</li>
+				<li>Heartless :(</li>
+			</ol>
+		</td>
+		<td>
+			<p> My top 3 shows are:</p>
+			<ol>
+				<li>Attack On Titan</li>
+				<li>Game of Thrones</li>
+				<li>Naruto</li>
+			</ol>
+		</td>
+	</tr>
+</table>
+<p>Here is an audio of one of my favorite songs, Heartbreak Anniversiry:</p>
+<audio id = "audio"  controls> <source src="audio/Giveon - Heartbreak Anniversary (Audio).mp3"></audio>
+<button onclick = "enableLoop()" type="button">Enable loop</button>
+<button onclick = "disableLoop()" type="button">Disable loop</button>
+</div>
+</div>
+<script src="script.js"></script>
+<!-- About End -->
+  </body>
+</html>

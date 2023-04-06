@@ -1,0 +1,188 @@
+* {
+    background: rgb(39, 19, 94);
+    color: orange;   
+    padding-left: 3px;
+}
+
+* > ol, ul{
+    padding-left: 20px;
+}
+
+@media (min-width: 800) {
+    .p{
+        color: red;
+    }
+}
+
+img{
+    border: 2px solid grey;
+    padding: 1px;
+    margin: 2%;
+}
+
+.navLinks > ul > li{
+    display: inline-block;
+}
+
+.required::after{
+    content: '*';
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    border: solid grey;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 150px;
+}
+
+.row > h1{
+    padding-top: 23px;
+    padding-left: 2px;
+}
+
+.row h1, .row ul{
+    margin: 0;
+}
+
+.row1{
+    display: flex;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: solid grey;
+    height: 400px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex: 1;
+    border: solid grey;
+    
+}
+
+.col1 > p, h3{
+    font-style: italic;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header"
+    "picture info";
+}
+
+.grid-item-1{
+    grid-area: header;
+    border: solid grey;
+}
+
+.grid-item-2{
+    grid-area: info;
+    border: solid grey;
+}
+
+.grid-item-3{
+    grid-area: picture;
+    border: solid grey;
+}
+
+table, tr, td{
+    border-collapse: collapse;
+    border: 2px solid grey;
+    align-content: center;
+    width: auto;
+}
+.grid-container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header"
+    "about hobby";
+}
+
+.grid-1{
+    grid-area: header;
+    border: solid grey;
+}
+
+.grid-2{
+    grid-area: about;
+    border: solid grey;
+}
+
+.grid-3{
+    grid-area: hobby;
+    border: solid grey;
+}
+
+.grid-container-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "skills projects chess";
+}
+
+.grid-item1{
+    grid-area: header;
+    border: solid grey;
+}
+
+.grid-item2{
+    grid-area: skills;
+    border: solid grey;
+}
+
+.grid-item3{
+    grid-area: projects;
+    border: solid grey;
+}
+
+.grid-item4{
+    grid-area: chess;
+    border: solid grey;
+}
+
+.grid-container-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header"
+    "school grad";
+}
+.grid-box1{
+    grid-area: header;
+    border: solid grey;
+}
+
+.grid-box2{
+    grid-area: school;
+    border: solid grey;
+}
+
+.grid-box3{
+    grid-area: grad;
+    border: solid grey;
+}

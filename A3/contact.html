@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+	  <link rel=" icon" href="images/Fav.png">
+    <title>Kassem Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<!-- Header Starts -->
+<div class="row">
+<h1>Contact Information</h1>
+<nav class="navLinks">
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li><a href="skills.html">Skills</a></li>
+	  <li><a href="education.html">Education</a></li>
+    <li><a href="contact.html">Contact</a></li>
+	</ul>
+  </nav>
+  <div>
+  <button onclick = "color('rgb(39, 19, 94)', 'orange')">Normal</button>
+  <button onclick = "color1('black', 'white')" >Dark</button>
+  <button onclick="color2('lightblue', 'darkmagenta')">Light</button>
+  </div>
+</div>
+<br>
+<!-- Header End -->
+<!-- Contact -->
+<div class="row1">
+  <div class="col1">
+<p></p>
+<h1>Information</h1>
+<p>For more information, you can call or email me:</p>
+<br>
+<p>(902) 473-9690</p>
+<br>
+<p><a class="link" href="mailto:kazeinab123@gmail.com">kazeinab123@gmail.com</a></p>
+  </div>
+  <br>
+  <div class="col2">
+<p>This is a form for me to ask you a question. The inputs with a * means they are required</p>
+<form>
+  <div>
+    <label class="required" for="name">Name</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div>
+    <label class="required" for="Password">Password</label>
+    <input type="password" name="Password" id="Password">
+    <button id="myButton" onclick="handler1()"> Submit</button>
+  </div>
+  <div>
+    <form action="/action_page.php">
+      <p><label for="w3review">Review of My website:</label></p>
+      <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</form>
+</div>
+</div>
+<script src="script.js"></script>
+<!-- Contact End-->
+  </body>
+  </html>

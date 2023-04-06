@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<link rel=" icon" href="images/Fav.png">
+    <title>Kassem Personal Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+	<div class="grid-container-3">
+		<div class="grid-item1">
+			<h1>My Skills</h1>
+			<nav class="navLinks">
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="about.html">About</a></li>
+				  <li><a href="skills.html">Skills</a></li>
+				  <li><a href="education.html">Education</a></li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+			  </nav>
+			  <button onclick = "color('rgb(39, 19, 94)', 'orange')">Normal</button>
+			  <button onclick = "color1('black', 'white')" >Dark</button>
+			  <button onclick="color2('lightblue', 'darkmagenta')">Light</button>
+			</div>
+		<div class="grid-item2">
+			<h2>Skills</h2>
+			<P>These are some things I consider myself to be pretty good at compared to an average person:</P>
+			<ul>
+				<li> Chess</li>
+				<li> Coding <ol>
+					<li> Java</li>
+					<li> Basic python</li>
+					<li> Basic C</li>
+					<li> Basic HTML</li>
+				</ol></li>
+				<li> Math</li>
+				<li> Football</li>
+				<li> Having fun</li>
+			</ul>
+		</div>
+		<div class="grid-item3">
+			<h2>Projects</h2>
+			<p>Here is an example of the source code of a small project I wrote in java to generate n numbers of the fibonnaci sequence:</p>
+			<p><a class="link" href="projects/Fibonacci.java" alt="Fibonacci project"> Fibonacci Code</a></p>
+			<p>Here is a fun calculator that multiplies any number you input by 10:</p>
+		  <form>
+			<label for="input">Enter a number:</label>
+			<input id="input" name="input">
+			<button type="button" onclick="calculate()">Calculate</button>
+		  </form>
+		  <p id="output"></p>
+		</div>
+		<div class="grid-item4">
+			<h2>Chess</h2>
+			<p>I like to practice chess a lot as it helps me keep my brain sharp. I have an account on <a class="link" href="https://www.chess.com/">Chess.com</a> and I try to play a couple games a day.<br>Sometimes I even watch youtube videos to help me improve. My personal favorite account is GothamChess. Here is an example of one of his videos.</p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+  </body>
+</html>
